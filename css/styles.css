@@ -105,6 +105,9 @@ header #header-content {
     align-self: center;
     text-align: center;
 }
+header #header-content p {
+    line-height: 2.5rem;
+}
 
 section#about .container {
     display: flex;
@@ -210,6 +213,15 @@ footer #social ul li {
 
 .btn:hover {
     background: #e5ab00;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background: #3f3f3f;
 }
 
 .py-1 { padding: 1rem 0; }
