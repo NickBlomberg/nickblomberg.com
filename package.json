@@ -1,0 +1,21 @@
+{
+  "name": "nickblomberg.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickBlomberg/nickblomberg.com.git"
+  },
+  "author": "Nick Blomberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickBlomberg/nickblomberg.com/issues"
+  },
+  "homepage": "https://github.com/NickBlomberg/nickblomberg.com#readme"
+}
