@@ -41,6 +41,10 @@ a {
     color: var(--dark-color);
 }
 
+ul {
+    list-style: none;
+}
+
 section {
     padding: 2rem;
 }
@@ -77,7 +81,6 @@ header nav {
 header nav ul {
     display: flex;
     justify-content: flex-end;
-    list-style: none;
 }
 
 header nav ul li {
@@ -115,6 +118,7 @@ section#about img {
 /* CONTACT */
 section#contact {
     background: var(--light-color);
+    padding-bottom: 3rem;
 }
 
 section#contact .form-wrapper {
@@ -149,6 +153,25 @@ section#contact .form-group input:not([type='submit']), .form-group textarea {
 
 section#contact form input[type='submit'] {
     align-self: center;
+}
+
+footer {
+    padding: 1.5rem;
+    background: var(--dark-color);
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer #social ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer #social ul li {
+    margin-left: 1.75rem;
 }
 
 /* Utility */
