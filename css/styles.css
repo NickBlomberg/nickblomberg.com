@@ -76,13 +76,14 @@ header:before {
     background-color: rgba(255, 255, 255, 0.75);
 }
 
-header > * {
+header #header-content {
     z-index: 2;
 }
 
 /* Navigation */
 header nav {
     padding: 1.7rem 1rem;
+    z-index: 3;
 }
 
 header nav ul {
@@ -102,6 +103,10 @@ header nav ul li a {
 header nav ul li a:hover {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
+}
+
+header nav button.hamburger {
+    display: none;
 }
 
 header #header-content {

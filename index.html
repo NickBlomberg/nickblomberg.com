@@ -12,6 +12,9 @@
     <meta name="robots" content="follow">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <link rel="stylesheet" href="./dist/hamburgers.min.css">
     <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
 
     <script src="./js/modernizr.js"></script>
@@ -20,12 +23,20 @@
 <body id="home">
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <button class="hamburger hamburger--spring" type="button" aria-label="Menu" aria-controls="navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home" onclick="toggle_menu()">Home</a></li>
+                    <li><a href="#about" onclick="toggle_menu()">About</a></li>
+                    <li><a href="#projects" onclick="toggle_menu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggle_menu()">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div id="header-content">
@@ -109,5 +120,20 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+
+    hamburger.addEventListener("click", function () {
+        toggle_menu(hamburger);
+    });
+
+    function toggle_menu() {
+        const menu = document.querySelector("nav .menu");
+
+        hamburger.classList.toggle("is-active");
+        menu.classList.toggle("menu-active");
+    }
+</script>
 
 </html>
