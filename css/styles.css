@@ -118,6 +118,11 @@ header #header-content p {
     line-height: 2.5rem;
 }
 
+header #header-content a .icon {
+    vertical-align: middle;
+    font-size: 22px;
+}
+
 section#about .container {
     display: flex;
     flex-direction: column;
@@ -239,3 +244,30 @@ footer #social ul li {
 .py-1 { padding: 1rem 0; }
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
+
+/* SVG ICONS */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    font-size: 32px;
+}
+
+.icon-linkedin-square {
+  width: 0.857421875em;
+}
+
+.icon-instagram {
+  width: 0.857421875em;
+}
+
+.icon-user {
+  width: 0.7138671875em;
+}
+
+.icon-github {
+  width: 0.857421875em;
+}
