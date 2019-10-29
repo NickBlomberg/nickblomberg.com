@@ -14,8 +14,16 @@ header {
         align-self: center;
         text-align: center;
 
+        @media #{$mq-mobile} {
+            margin-top: 4rem;
+        }
+
         p {
             line-height: 2.5rem;
+
+            @media #{$mq-mobile} {
+                padding: 1rem 2rem;
+            }
         }
 
         a .icon {

@@ -11,6 +11,10 @@ section#about {
             border-radius: 50%;
             margin: 1.5rem 0 0 0;
             max-width: 250px;
+
+            @media #{$mq-mobile} {
+                max-width: 175px;
+            }
         }
     }
 }

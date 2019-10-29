@@ -35,5 +35,9 @@ section#contact {
                 align-self: center;
             }
         }
+
+        @media #{$mq-mobile} {
+            max-width: 100%;
+        }
     }
 }
