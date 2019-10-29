@@ -1,0 +1,53 @@
+.btn {
+    display: inline-block;
+    background: $primary-color;
+    padding: 0.6rem 2.5rem;
+    margin: 0.75rem 0.25rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: $dark-color;
+    line-height: inherit;
+
+    &:hover {
+        background: darken($primary-color, 5);
+    }
+
+    &-dark {
+        background: $dark-color;
+        color: #ffffff;
+    }
+
+    &-dark:hover {
+        background: lighten($dark-color, 5);
+    }
+}
+
+
+/* SVG ICONS */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    font-size: 32px;
+}
+
+.icon-linkedin-square {
+  width: 0.857421875em;
+}
+
+.icon-instagram {
+  width: 0.857421875em;
+}
+
+.icon-user {
+  width: 0.7138671875em;
+}
+
+.icon-github {
+  width: 0.857421875em;
+}
