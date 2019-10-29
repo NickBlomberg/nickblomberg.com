@@ -1,0 +1,16 @@
+section#about {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    picture {
+        align-self: center;
+
+        img {
+            border-radius: 50%;
+            margin: 1.5rem 0 0 0;
+            max-width: 250px;
+        }
+    }
+}
