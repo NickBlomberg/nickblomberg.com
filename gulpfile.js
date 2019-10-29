@@ -1,7 +1,12 @@
 const { src, dest, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
 
-const sassPath = './sass/*.scss';
+const sassPath = './sass/**/*.scss';
+
+function html() {
+    return src('./*.html')
+        .pipe(dest('./dist'))
+}
 
 function css() {
     return src(sassPath)
@@ -10,9 +15,10 @@ function css() {
 }
 
 function watcher() {
-    watch(sassPath, css);
+    watch(sassPath, css, html);
 }
 
+exports.html = html;
 exports.css = css;
 exports.watcher = watcher;
-exports.default = parallel(css);
+exports.default = parallel(html, css);
