@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
+const uglify = require("gulp-uglify");
 
 const paths = {
     html: ['./*.html'],
@@ -29,6 +30,7 @@ function css() {
 
 function js() {
     return src(paths.scripts)
+        .pipe(uglify())
         .pipe(dest('./dist/js/'))
 }
 
