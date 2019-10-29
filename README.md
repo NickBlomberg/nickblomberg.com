@@ -14,7 +14,7 @@ This is my personal portfolio, where I can share projects and information about 
 * Implement the projects section.
 * Improve the navigation usability/style:
     * Make the navigation menu sticky with a transitioning background.
-    * Fix the dark hamburger close icon when the mobile menu overlay is open.
+    * ~~Fix the dark hamburger close icon when the mobile menu overlay is open.~~
 * Optimize the showcase background image using a blur-up technique.
 * ~~This would be a good learning opportunity for **[SASS](https://sass-lang.com/)**. By converting the existing styling into SASS.~~
 
