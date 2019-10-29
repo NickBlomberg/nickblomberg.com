@@ -1,0 +1,18 @@
+footer {
+    padding: 1.5rem;
+    background: $dark-color;
+    color: #ffffff;
+
+    a {
+        color: #ffffff;
+    }
+
+    #social ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-left: 1.75rem;
+        }
+    }
+}
