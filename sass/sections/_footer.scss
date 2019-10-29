@@ -12,10 +12,14 @@ footer {
     #social ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
 
         li {
             margin-left: 1.75rem;
+        }
+
+        @media #{$mq-mobile} {
+            justify-content: space-around;
         }
     }
 
