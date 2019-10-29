@@ -1,5 +1,9 @@
 const { src, dest, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
 
 const paths = {
     html: ['./*.html'],
@@ -17,7 +21,10 @@ function html() {
 function css() {
     return src(paths.sass)
         .pipe(sass().on('error', sass.logError))
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest('./dist/css'))
+        
 }
 
 function js() {
