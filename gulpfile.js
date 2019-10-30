@@ -5,6 +5,7 @@ const cssnano = require('cssnano');
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
+const browserSync = require('browser-sync').create();
 
 const paths = {
     html: ['./*.html'],
@@ -25,7 +26,7 @@ function css() {
         .pipe(rename({ suffix: ".min" }))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest('./dist/css'))
-        
+        .pipe(browserSync.stream())
 }
 
 function js() {
@@ -45,9 +46,15 @@ function copy() {
 }
 
 function watcher() {
-    watch(paths.html, html);
+    browserSync.init({
+        server: {
+            baseDir: './dist'
+        }
+    });
+
+    watch(paths.html, html).on('change', browserSync.reload);
     watch(paths.sass, css);
-    watch(paths.scripts, js);
+    watch(paths.scripts, js).on('change', browserSync.reload);
     watch(paths.images, img);
 }
 
