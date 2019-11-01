@@ -5,6 +5,7 @@ const cssnano = require('cssnano');
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
+const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 
 const paths = {
@@ -22,9 +23,11 @@ function html() {
 
 function css() {
     return src(paths.sass)
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(rename({ suffix: ".min" }))
         .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(sourcemaps.write('maps'))
         .pipe(dest('./dist/css'))
         .pipe(browserSync.stream())
 }
