@@ -1,11 +1,33 @@
 section#projects {
-    .container {
-        display: flex;
-        flex-direction: column;
+    #projects-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 1.4rem 0rem;
 
-        p {
-            align-self: center;
-            padding: 5rem 0;
+        .project {
+            background: $light-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+    
+            img {
+                width: 100%;;
+            }
+    
+            .project-content, .project-actions {
+                padding: 1rem;
+                text-align: center;
+            }
+    
+            .project-content {
+                flex: 1
+            }
+    
+            .project-actions .btn {
+                padding: 0.3rem 1.1rem;
+            }
         }
     }
 }
