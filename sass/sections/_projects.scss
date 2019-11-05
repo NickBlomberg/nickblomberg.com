@@ -5,6 +5,10 @@ section#projects {
         gap: 1rem;
         margin: 1.4rem 0rem;
 
+        @media #{$mq-mobile} {
+            grid-template-columns: 1fr;
+        }
+
         .project {
             background: $light-color;
             display: flex;
