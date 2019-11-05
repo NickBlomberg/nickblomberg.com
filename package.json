@@ -8,13 +8,19 @@
     "autoprefixer": "^9.7.0",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
+    "cwebp-bin": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.1.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.23.1"
+    "gulp-webp": "^4.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "sass": "^1.23.1",
+    "webp-bin": "^0.1.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
