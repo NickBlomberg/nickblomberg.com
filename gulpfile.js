@@ -17,7 +17,7 @@ const paths = {
     sass: ['./sass/**/*.scss'],
     scripts: ['./js/**/*.js'],
     images: ['./img/**/*'],
-    extras: ['favicon.ico'],
+    extras: ['favicon.ico', 'robots.txt'],
 }
 
 function html() {
