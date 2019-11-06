@@ -19,8 +19,7 @@
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "sass": "^1.23.1",
-    "webp-bin": "^0.1.4"
+    "sass": "^1.23.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
