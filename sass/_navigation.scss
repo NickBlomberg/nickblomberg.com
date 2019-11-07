@@ -27,6 +27,10 @@ nav {
                 color: $dark-color;
                 font-weight: normal;
 
+                @media #{$mq-mobile} {
+                    color: #ffffff;
+                }
+
                 &:hover {
                     background: rgba(0, 0, 0, 0.1);
                     border-radius: 0.25rem;
